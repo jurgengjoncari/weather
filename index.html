@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather</title>
+</head>
+<body>
+    <header><h1>Weather</h1></header>
+    <main>
+        <div>
+            <legend>Enter a city</legend>
+            <fieldset>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city">
+                <button data-submit>Submit</button>
+            </fieldset>
+        </div>
+        <section>No city selected</section>
+        <dl>
+            <dt>Feels like</dt>
+            <dd id="feels_like"></dd>
+            <dt>Humidity</dt>
+            <dd id="humidity"></dd>
+            <dt>Pressure</dt>
+            <dd id="pressure"></dd>
+            <dt>Temperature</dt>
+            <dd id="temp"></dd>
+            <dt>Max</dt>
+            <dd id="temp_max"></dd>
+            <dt>Min</dt>
+            <dd id="temp_min"></dd>
+        </dl>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

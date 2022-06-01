@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+main {
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    justify-content: center;
+}
+
+dl {
+    display: none;
+}
+
+header {
+    max-width: 80ch;
+    justify-self: center;
+}
