@@ -17,16 +17,13 @@ async function getData(city) {
     const body = document.querySelector('body')
     const section = document.querySelector('section')
     const list = document.querySelector('dl')
-    const dd = list.querySelectorAll('dd')
+    // const dd = list.querySelectorAll('dd')
 
     console.log(weatherResponseJSON);
 
     for (let [key, value] of Object.entries(weatherResponseJSON.main)) {
-        for (let d of dd) {
-            if (d.id == key) {
-                d.textContent = value
-            }
-        }
+        let dd = document.querySelector(`#${key}`)
+        dd.textContent = value
     }
 
     list.style.display = 'initial'
